@@ -1,0 +1,45 @@
+CREATE TABLE IF NOT EXISTS `poll_option` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `poll_id` int(11) NOT NULL,
+  `option` varchar(250) NOT NULL,
+  `click` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=12 ;
+
+--
+-- Dumping data for table `poll_option`
+--
+
+INSERT INTO `poll_option` (`id`, `poll_id`, `option`, `click`) VALUES
+(1, 1, ' include ()', 1),
+(2, 1, 'require ()', 0),
+(3, 1, 'Allebei', 0),
+(4, 1, 'Geen van Beide', 3),
+(5, 2, 'include ()', 1),
+(6, 2, 'require ()', 0),
+(7, 2, 'Geen van beide', 3),
+(8, 3, 'vermenigvuldiging', 0),
+(9, 3, 'aaneenschakeling', 0),
+(10, 3, 'verschillende objecten en zijn members', 0),
+(11, 3, 'delimeter', 1);
+
+
+CREATE TABLE IF NOT EXISTS `poll_question` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `question` varchar(200) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+
+--
+-- Dumping data for table `poll_question`
+--
+
+INSERT INTO `poll_question` (`id`, `question`) VALUES
+(1, 'De functie die doorgaat zelfs wanneer de script faalt'),
+(2, 'Welke van de statements stopt error messages te laten zien wanneer het faalt?'),
+(3, 'Waarvoor word de (.) in PHP gebruikt');
+(4, 'De functie die doorgaat zelfs wanneer de script faalta'),
+(5, 'Welke van de statements stopt error messages te laten zien wanneer het faalt?a'),
+(6, 'Waarvoor word de (.) in PHP gebruikta');
+(7, 'Welke van de statements stopt error messages te laten zien wanneer het faalt?b'),
+(8, 'Waarvoor word de (.) in PHP gebruiktb');

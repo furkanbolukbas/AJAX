@@ -1,8 +1,8 @@
 <? 
-$host = "127.0.0.1";
+$host = "";
 $gebruiker = "74757";
-$wachtwoord = "xMYQpe";
-$DBnaam = "db74757";
+$wachtwoord = "";
+$DBnaam = "";
 $tabelnaam = "persoonsgegevens";
 $verbinding = mysql_connect ($host, $gebruiker, $wachtwoord);
 mysql_select_db ($DBnaam);
